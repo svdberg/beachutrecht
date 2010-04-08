@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>reservations</servlet-name>
+    <servlet-class>gaej.beachvolley.server.ReservationServiceImpl</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>reservations</servlet-name>
+    <url-pattern>/beachvolley/reservations</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>loginService</servlet-name>
+    <servlet-class>gaej.beachvolley.server.LoginServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginService</servlet-name>
+    <url-pattern>/beachvolley/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>cleanup</servlet-name>
+  	<servlet-class>gaej.beachvolley.server.CronCleanUpServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>cleanup</servlet-name>
+  	<url-pattern>/beachvolley/cleanup</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>BeachVolley.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

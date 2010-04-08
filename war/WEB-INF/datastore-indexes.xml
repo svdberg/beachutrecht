@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datastore-indexes autoGenerate="false">
+	<datastore-index kind="Reservation" ancestor="false"
+		source="manual">
+		<property name="player" direction="asc" />
+		<property name="date" direction="asc" />
+	</datastore-index>
+</datastore-indexes>
